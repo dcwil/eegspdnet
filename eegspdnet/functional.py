@@ -1,4 +1,5 @@
 import torch
+from torch.autograd import Function
 
 
 class LogEig_I(Function):

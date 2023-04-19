@@ -53,12 +53,12 @@ class SCMPool(nn.Module):
 
 
 class ChSpecConv(nn.Module):
-    def __init__(self, matrix_size, n_filters, n_time_kernel):
+    def __init__(self, n_ch, n_filters, n_time_kernel):
         super(__class__, self).__init__()
         self.conv = nn.Conv1d(
-            matrix_size, n_filters * matrix_size, n_time_kernel, groups=matrix_size
+            n_ch, n_filters * n_ch, n_time_kernel, groups=n_ch
         )
-        self.band_indices = _get_band_indices(matrix_size, n_filters)
+        self.band_indices = _get_band_indices(n_ch, n_filters)
 
     def forward(self, x):
         x = self.conv(x)
