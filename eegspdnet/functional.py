@@ -1,6 +1,8 @@
 import torch
 from torch.autograd import Function
 
+from spdnet.utils import symmetric
+
 
 class LogEig_I(Function):
     """Copies https://github.com/adavoudi/spdnet/blob/2a15e908634cd8db6c75ea45d9e3bd567203eccf/spdnet/spd.py#L126-L175
