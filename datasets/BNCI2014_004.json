@@ -1,0 +1,22 @@
+{
+  "channels_to_pick": ["C3", "Cz", "C4"],
+  "low_cut_hz": 4,
+  "hi_cut_hz": 38,
+  "sfreq": 250,
+  "max_abs_val": 800,
+  "trial_stop_offset_samples": 750,
+  "trial_start_offset_samples": 750,
+  "n_participants": 9,
+  "scaling_factor": 1e6,
+  "split": {
+    "valid": {
+      "train": [0, 1],
+      "test": [2]
+    },
+    "eval": {
+      "train": [0, 1, 2],
+      "test": [3, 4]
+    }
+  },
+  "batch_size": 120
+}

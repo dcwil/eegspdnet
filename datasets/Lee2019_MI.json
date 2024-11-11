@@ -1,0 +1,23 @@
+{
+  "channels_to_pick": ["FC5", "FC3", "FC1", "FC2", "FC4", "FC6", "C5", "C3", "C1", "Cz", "C2", "C4", "C6", "CP5", "CP3", "CP1", "CPz", "CP2", "CP4", "CP6"],
+  "low_cut_hz": 4,
+  "hi_cut_hz": 38,
+  "sfreq": 250,
+  "max_abs_val": 800,
+  "trial_stop_offset_samples": -125,
+  "trial_start_offset_samples": 250,
+  "n_participants": 54,
+  "scaling_factor": 1e6,
+  "split": {
+    "valid": {
+      "train": [0],
+      "test": 0.2
+    },
+    "eval": {
+      "train": [0],
+      "test": [1]
+
+    }
+  },
+  "batch_size": 80
+}

@@ -1,0 +1,24 @@
+{
+  "channels_to_pick": ["AFp1", "AFp2", "AFF1h", "AFF2h", "AFF5h", "AFF6h", "F3", "F4", "F7", "F8", "FCC3h", "FCC4h", "FCC5h",
+                       "FCC6h", "T7", "T8", "Cz", "CCP3h", "CCP4h", "CCP5h", "CCP6h", "Pz", "P3", "P4", "P7", "P8", "PPO1h", "PPO2h", "POO1", "POO2"],
+  "low_cut_hz": 4,
+  "hi_cut_hz": 38,
+  "sfreq": 200,
+  "max_abs_val": 800,
+  "trial_stop_offset_samples": 0,
+  "trial_start_offset_samples": 0,
+  "n_participants": 29,
+  "scaling_factor": 1e6,
+  "split": {
+    "valid": {
+      "train": [0],
+      "test": [1]
+    },
+    "eval": {
+      "train": [0, 1],
+      "test": [2]
+
+    }
+  },
+  "batch_size": 20
+}
